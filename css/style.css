@@ -1,8 +1,8 @@
 .row {
-    width: 992px;
+    /*! width: 992px; */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    /*! margin-top: 100px; */
   }
   
   /* BLOCCO LEZIONI */
@@ -75,21 +75,103 @@
 /* INIZIO ESERCIZIO */  
 
 @media screen and (max-width:420px) {
-    #lezioni, #why{
-        background-color:rgb(244, 245, 179);
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
     }
 
-    #lezioni .row>.left, #lezioni .row>.right {
+    .container{
+        padding:15px;
+    }
+
+    #lezioni, 
+    #why{
+        background-color:#f2f2cd;
+    }
+
+    #lezioni .row>.left, 
+    #lezioni .row>.right {
         width: 100%;
     }
     .row{
         width:100%;
+        margin-top:0;
     }
      h1{
          width:100%;
      }
 
-     #steps .row>.left, #steps .row>.central, #steps .row>.right {
+     #steps .row>.left, 
+     #steps .row>.central, 
+     #steps .row>.right {
         width: 100%;
     }
+
+    img {
+        height: 100px;
+      }
+}
+
+/* PROVA LAYOUT TABLET */
+
+@media screen and (min-width:421px) and (max-width:768px){
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+
+    .row{
+        width:100%;
+    }
+
+    .container{
+        padding:15px;
+    }
+
+    #lezioni{
+        background-color: lightblue ;
+    }
+
+    #steps{
+        background-color: rgb(174, 198, 212);
+    }
+
+    #why{
+        background-color: rgb(195, 190, 209);
+    }
+
+    h1{
+        font-size:2.5em;
+        background-color: rgb(142, 185, 181);
+        margin:0 auto;
+        padding: 15px 0;
+        
+    }
+
+    img{
+        height:120px;
+    }
+
+    #lezioni .row > .left, #lezioni .row > .right{
+        padding-top: 15px;
+    }
+
+    #why .row > .first,
+    #why .row > .second,
+    #why .row > .third {
+        width: 80%;
+        margin-top: 80px;
+        margin: 0 auto;
+        padding-top:15px;
+    }
+    #steps .row > .left, 
+    #steps .row > .central, 
+    #steps .row > .right {
+        padding-top: 15px;
+     }
 }
