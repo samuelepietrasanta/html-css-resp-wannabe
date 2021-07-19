@@ -73,3 +73,23 @@
   }
   
 /* INIZIO ESERCIZIO */  
+
+@media screen and (max-width:420px) {
+    #lezioni, #why{
+        background-color:rgb(244, 245, 179);
+    }
+
+    #lezioni .row>.left, #lezioni .row>.right {
+        width: 100%;
+    }
+    .row{
+        width:100%;
+    }
+     h1{
+         width:100%;
+     }
+
+     #steps .row>.left, #steps .row>.central, #steps .row>.right {
+        width: 100%;
+    }
+}
